@@ -1,0 +1,43 @@
+<html>
+<head>
+
+    <script>
+         
+                function changeimg(){
+                    
+                   var imagenode = document.getElementById("image");
+                   o=imagenode.src;
+                   w=imagenode.width;
+                   h=imagenode.height;
+
+
+                   imagenode.src = "Sunset.jpg";
+                   imagenode.width = "500";
+                   imagenode.height = "500";
+
+                }
+
+                function originalimg(){
+                    var imagenode = document.getElementById("image");
+                    imagenode.src = o;
+                    imagenode.width = w;
+                    imagenode.height = h;
+
+
+                }
+
+      
+    </script>
+
+    </head>
+
+<body>
+     
+          <img src="Sunset.jpg" width="300"  height="300"  id="image"
+         onmouseover="changeimg()" onmouseout="originalimg()"/>
+
+</body>
+
+
+
+</html>
